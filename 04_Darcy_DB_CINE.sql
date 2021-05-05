@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-05-2021 a las 00:50:02
+-- Tiempo de generación: 06-05-2021 a las 00:56:01
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -41,7 +41,10 @@ CREATE TABLE `tbl_taquilla` (
 
 INSERT INTO `tbl_taquilla` (`ID_TAQUILLA`, `SALA`, `BUTAKAS`, `BOLETOS`, `PRECIO`) VALUES
 (1, '2', 3, 3, 150),
-(2, '5', 3, 3, 200);
+(2, '5', 3, 3, 200),
+(3, '8', 5, 5, 270),
+(4, '6', 10, 10, 310),
+(5, 'sala  9', 200, 100, 150);
 
 --
 -- Índices para tablas volcadas
@@ -61,7 +64,7 @@ ALTER TABLE `tbl_taquilla`
 -- AUTO_INCREMENT de la tabla `tbl_taquilla`
 --
 ALTER TABLE `tbl_taquilla`
-  MODIFY `ID_TAQUILLA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_TAQUILLA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
