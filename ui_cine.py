@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-import mydatabasecine
+import cine_database
 
 window = Tk()
 frame_app = Frame(window, width=400, height=600, bg="red")
@@ -27,7 +27,7 @@ def register():
     boletos = entry_boletos.get()
     precio = entry_precio.get()
     
-    cine_db = mydatabasecine.MyDatabase()
+    cine_db = cine_database.MyDatabase()
     data = (sala, butakas, boletos, precio)
     print(data)
     cine_db.insert_db(sala, butakas, boletos, precio)
